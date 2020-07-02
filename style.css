@@ -70,4 +70,10 @@ header{
     visibility: visible !important;
     margin: 10px;
 }
+@media (max-width: 800px){
+  .indicators{
+    width:60vw;
+    margin: 10px auto;
+}
+}
  
