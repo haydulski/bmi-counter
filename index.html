@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Licznik masy</title>
+</head>
+
+<body>
+    <header>
+        <h1>Kalkulator odchudzania</h1>
+    </header>
+    <div class="indicators">
+        <form>
+            <label for="current-weight">Twoja masa</label><br>
+            <input type="range" id="current-weight" name="current-weight" min="0" max="200" step='1' class="slider">
+            <span class="current-weight-span">0</span> kg
+            <br>
+            <label for="new-weight">Chcę ważyć:</label><br>
+            <input type="range" id="new-weight" name="new-weight" min="0" max="200" step='1' class="slider">
+            <span class="new-weight-span">0</span> kg
+            <br>
+            <label for='height'>Wzrost:</label><br>
+            <input type="range" id="height" name="height" min="120" max="240" step='1' class="slider">
+            <span class="height-span">0</span> cm
+            <br>
+            <br>
+            <label for='start-date'>Start odchudzania:</label><br>
+            <input type="date" name="start-date" id="start-date"><br>
+            <label for='end-date'>Koniec odchudzania:</label><br>
+            <input type="date" name="end-date" id="end-date"><br><br>
+            <button class="submit-button"> Oblicz</button>
+        </form>
+        <div class="answer">
+            <p class="weight-difference">
+                Chcesz schudnąć <strong>20</strong> kg
+            </p>
+            <p class="current-bmi">
+                Twój Body mass index to <strong>28</strong>
+            </p>
+            <p class="new-bmi">
+                Docelowe BMI to: <strong>18</strong>
+            </p>
+            <p class="daily-kg">
+                Dziennie powinieneś chudnąć: <strong>0,2kg</strong>
+            </p>
+            <p class="weekly-kg">
+                Tygodniowo powinieneś chudnąć: <strong>3kg</strong>
+            </p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        const start = new App;
+        start.initializeApp()
+    </script>
+</body>
+
+</html>
