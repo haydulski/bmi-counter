@@ -1,7 +1,9 @@
 body{
-  background-image: linear-gradient(to bottom right, #728EA6, #5CF29D);
+  background-image:url(./background-image1.jpg);
   color: #2A4359;
   min-height: 98vh;
+  background-position: center;
+  background-size: cover;
 }
 header{
   margin: 40px auto;

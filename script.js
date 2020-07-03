@@ -91,6 +91,9 @@ class App {
         // zmiana przez dni
         const changePerDay = this.changePerDay(weightDifference)
         document.querySelector('.daily-kg strong').textContent = changePerDay
+        // ilosc kalorii
+        const calPerDay = this.getCal(changePerDay)
+        document.querySelector('.daily-cal strong').textContent = calPerDay
         // zmiana przez tygodnie
         const changePerWeek = this.changePerWeek(weightDifference)
         document.querySelector('.weekly-kg strong').textContent = changePerWeek
@@ -108,6 +111,9 @@ class App {
         const numberOfDays = this.getDateDifference() / dayInMsc;
         const changeDaily = numberOfDays ? (weightDifference / numberOfDays).toFixed(2) : null;
         return changeDaily
+    }
+    getCal(kgPerDay) {
+        return 7000 * kgPerDay
     }
     changePerWeek(weightDifference) {
         const weekInMsc = 7 * 24 * 60 * 60 * 1000;
