@@ -1,14 +1,14 @@
 body{
-  background-image: linear-gradient(to bottom right, #D9D7D7, #F28972);
-  color: #222601;
-  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #728EA6, #5CF29D);
+  color: #2A4359;
+  min-height: 98vh;
 }
 header{
   margin: 40px auto;
   display: block;
   text-align: center;
   text-transform: uppercase;
-  color: #D90D32;
+  color: #011526;
 }
 .indicators{
     width:30vw;
@@ -20,7 +20,7 @@ header{
     width: 60%;
     height: 5px;
     border-radius: 1px;  
-    background: #a7a7a7;
+    background: #2A4359;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -37,7 +37,7 @@ header{
    transition: 0.4s;
  }
  .submit-button:hover{
-   background-color: #D90D32;
+   background-color: #2D4459;
    color:#D9D7D7 ;
  }
   .slider::-webkit-slider-thumb {
@@ -46,7 +46,7 @@ header{
     width: 14px;
     height: 14px;
     border-radius: 50%; 
-    background: #D90D32;
+    background: #011526;
     cursor: pointer;
   }
   
@@ -54,13 +54,13 @@ header{
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: #D90D32;
+    background: #011425;
     cursor: pointer;
   }
   input[type="date"] {
     appearance: none;
     -webkit-appearance: none;
-    color: #222601;
+    color: #2A4359;
     font-family: "Helvetica", arial, sans-serif;
     font-size: 18px;
     border-radius: 5px;
@@ -69,6 +69,9 @@ header{
     display: inline-block !important;
     visibility: visible !important;
     margin: 10px;
+}
+.disable{
+  display: none;
 }
 @media (max-width: 800px){
   .indicators{

@@ -72,6 +72,12 @@ class App {
     }
     count() {
         if (!this.endDate.value) return alert('Podaj do kiedy chcesz schudnąć')
+        if (parseInt(this.currentWeight.value, 10) < parseInt(this.newWeight.value, 10)) {
+            this.newWeight.value = 0
+            this.newSpan.textContent = 0
+            return alert('Docelowa masa jest wyższa niż obecna')
+        }
+        document.querySelector('.answer').classList.remove('disable')
         //różnica mas
         const weightDifference = parseInt(this.currentWeight.value, 10) - parseInt(this.newWeight.value, 10)
         document.querySelector('.weight-difference strong').textContent = weightDifference > 0 ? weightDifference : '?';
