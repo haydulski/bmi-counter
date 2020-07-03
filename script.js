@@ -113,7 +113,7 @@ class App {
         return changeDaily
     }
     getCal(kgPerDay) {
-        return 7000 * kgPerDay
+        return (7000 * kgPerDay).toFixed()
     }
     changePerWeek(weightDifference) {
         const weekInMsc = 7 * 24 * 60 * 60 * 1000;
